@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gali · Política de privacidad</title>
+<style>
+  :root { --bg: #f7f6f2; --fg: #1f2a24; --muted: #5b675f; --accent: #2f5d46; --line: #d9dcd5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #151a17; --fg: #e6e9e4; --muted: #a3ada6; --accent: #8fc3a5; --line: #2c342f; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+  h1 { font-size: 1.8rem; line-height: 1.2; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; margin: 2.2rem 0 .5rem; color: var(--accent); }
+  p, li { margin: .4rem 0; }
+  ul { padding-left: 1.2rem; }
+  .meta { color: var(--muted); margin: 0 0 1.5rem; }
+  .summary { border: 1px solid var(--line); border-radius: 12px; padding: .8rem 1.1rem; }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .5rem .4rem; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--accent); }
+  .scroll { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+<h1>Política de privacidad de Gali</h1>
+<p class="meta">Última actualización: 28 de septiembre de 2026</p>
+
+<div class="summary">
+  <p><strong>En resumen:</strong> Gali no tiene cuentas, anuncios ni analítica. Tus salidas
+  se guardan solo en tu móvil. Para mostrar mapas, cumbres y rutas, la app pide datos a
+  servicios externos, y esas peticiones incluyen la zona en la que estás.</p>
+</div>
+
+<h2>Quién es el responsable</h2>
+<p>Gali es una app para orientarse en la montaña, desarrollada por Dominique Haroun a título
+personal. Para cualquier pregunta sobre esta política o sobre tus datos, escribe a
+<a href="mailto:dominiqueharoun@gmail.com">dominiqueharoun@gmail.com</a>.</p>
+
+<h2>Qué datos usa la app y para qué</h2>
+<ul>
+  <li><strong>Ubicación precisa.</strong> Sirve para mostrar tu posición en el mapa, la
+  altitud, el rumbo, las cumbres a tu alrededor, la ruta hasta una cumbre y la vuelta al
+  inicio. Mientras grabas una salida, la app sigue recibiendo la ubicación con la pantalla
+  apagada, a través de un servicio en primer plano con una notificación visible. Cuando no
+  grabas, solo la usa con la app abierta.</li>
+  <li><strong>Cámara.</strong> La vista de cumbres superpone sus nombres sobre la imagen de la
+  cámara. La imagen se procesa en el momento en tu móvil: no se guardan fotos ni vídeos y
+  no se envía a ningún sitio.</li>
+  <li><strong>Sensores del móvil</strong> (brújula, acelerómetro, barómetro). Se usan en el
+  dispositivo para el rumbo y el desnivel. No salen del móvil.</li>
+  <li><strong>Notificaciones.</strong> Solo para la notificación de grabación en curso.</li>
+</ul>
+
+<h2>Qué se guarda y dónde</h2>
+<p>Las salidas grabadas (puntos de ubicación con hora, altitud y precisión, nombre y
+estadísticas) y las zonas descargadas para usar sin conexión se guardan
+<strong>únicamente en tu móvil</strong>. No se suben a ningún servidor y la app tiene
+desactivada la copia de seguridad en la nube de Google. Al borrar una salida o desinstalar
+la app, esos datos desaparecen.</p>
+<p>Si exportas una salida a GPX, se crea un archivo que tú decides con quién compartir,
+usando el menú de compartir de Android.</p>
+
+<h2>Qué se envía a servicios externos</h2>
+<p>Gali no tiene servidor propio. Para funcionar, hace peticiones directamente desde tu móvil
+a estos servicios. Como en cualquier conexión a internet, cada uno recibe tu dirección IP y
+los datos de la petición, y los trata según su propia política de privacidad.</p>
+<div class="scroll">
+<table>
+  <tr><th>Servicio</th><th>Para qué</th><th>Qué recibe</th></tr>
+  <tr><td>Google Play Services</td><td>Calcular tu ubicación (proveedor de ubicación de
+  Android)</td><td>Lo que el sistema envía a Google para ubicarte, según los ajustes de
+  ubicación de tu móvil</td></tr>
+  <tr><td>MapTiler</td><td>Mapa topográfico en línea</td><td>Las teselas del mapa que ves,
+  que indican la zona que estás mirando</td></tr>
+  <tr><td>BRouter (brouter.de)</td><td>Calcular la ruta a pie hasta una cumbre</td><td>Tu
+  posición de salida y la cumbre elegida</td></tr>
+  <tr><td>Overpass API (overpass-api.de; de respaldo, el servidor Overpass de
+  maps.mail.ru)</td><td>Buscar cumbres cercanas o las de una zona que descargas</td><td>Un
+  rectángulo de unos kilómetros alrededor de tu posición, o la zona que descargas</td></tr>
+  <tr><td>Protomaps (protomaps.com)</td><td>Descargar el mapa de una zona para usarlo sin
+  conexión</td><td>Los límites de la zona que descargas</td></tr>
+  <tr><td>Amazon Web Services (teselas de elevación de acceso público)</td><td>Descargar el
+  relieve de una zona sin conexión</td><td>Los límites de la zona que descargas</td></tr>
+</table>
+</div>
+<p>Ninguno de estos datos se vende ni se usa con fines publicitarios.</p>
+
+<h2>Lo que la app no hace</h2>
+<ul>
+  <li>No pide crear una cuenta ni inicia sesión.</li>
+  <li>No muestra anuncios.</li>
+  <li>No incluye herramientas de analítica ni de seguimiento, ni envía informes de
+  errores.</li>
+  <li>No comparte tus salidas con nadie salvo que tú exportes un archivo GPX.</li>
+</ul>
+
+<h2>Tus derechos</h2>
+<p>El desarrollador no recibe ni guarda tus datos personales: todo lo que Gali guarda está en
+tu móvil y puedes borrarlo desde la propia app o desinstalándola. Puedes retirar en
+cualquier momento los permisos de ubicación, cámara o notificaciones desde los ajustes de
+Android. Si tienes dudas o quieres ejercer tus derechos de protección de datos, escribe a la
+dirección de contacto. También puedes reclamar ante la Agencia Española de Protección de
+Datos (<a href="https://www.aepd.es">aepd.es</a>).</p>
+
+<h2>Menores</h2>
+<p>Gali no está dirigida a menores de 13 años.</p>
+
+<h2>Cambios en esta política</h2>
+<p>Si la app empieza a tratar datos de otra forma, esta página se actualizará antes de
+publicar esa versión, con la fecha de la última actualización arriba.</p>
+</main>
+</body>
+</html>
